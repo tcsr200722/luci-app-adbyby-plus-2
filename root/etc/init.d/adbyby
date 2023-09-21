@@ -124,12 +124,12 @@ add_dns()
 	  fi
 	fi
 	
-	mkdir -p /tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/data /tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/host
-	rm -f /tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/data/* /tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/host/*
-	cp -a /usr/share/adbyby/rules/data/* /tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/data 2>/dev/null
-	cp -a /usr/share/adbyby/rules/host/* /tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/host 2>/dev/null
-	echo 'addn-hosts=/tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/host/' >> /tmp/dnsmasq.d/dnsmasq-adbyby.conf
-	echo 'conf-dir=/tmp/dnsmasq.d/dnsmasq-adbyby.d/rules/data' >> /tmp/dnsmasq.d/dnsmasq-adbyby.conf
+	mkdir -p /tmp/adbyby/rules/data /tmp/adbyby/rules/host
+	rm -f /tmp/adbyby/rules/data/* /tmp/adbyby/rules/host/*
+	cp -a /usr/share/adbyby/rules/data/* /tmp/adbyby/rules/data 2>/dev/null
+	cp -a /usr/share/adbyby/rules/host/* /tmp/adbyby/rules/host 2>/dev/null
+	echo 'addn-hosts=/tmp/adbyby/rules/host/' >> /tmp/dnsmasq.d/dnsmasq-adbyby.conf
+	echo 'conf-dir=/tmp/adbyby/rules/data' >> /tmp/dnsmasq.d/dnsmasq-adbyby.conf
 	
   [ $block_ios -eq 1 ] && echo 'address=/mesu.apple.com/0.0.0.0' >> /tmp/dnsmasq.d/dnsmasq-adbyby.conf
   if [ $block_cnshort -eq 1 ]; then
