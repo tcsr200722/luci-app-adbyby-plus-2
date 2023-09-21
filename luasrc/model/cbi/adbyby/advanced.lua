@@ -63,13 +63,6 @@ o:value("https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.tx
 o:value("https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt", translate("abp-filters-anti-cv"))
 o:value("https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt", translate("adblock-list"))
 o:value("https://easylist-downloads.adblockplus.org/fanboy-notifications.txt", translate("fanboy-notifications"))
-o:value("https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/cpbl-abp-list.txt", translate("cpbl-abp-list"))
-o:value("https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt", translate("nocoin"))
-o:value("https://easylist-downloads.adblockplus.org/easyprivacy.txt", translate("easyprivacy"))
-o:value("https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt", translate("easyprivacy+easylist"))
-o:value("https://easylist-downloads.adblockplus.org/fanboy-social.txt", translate("fanboy-social"))
-o:value("https://easylist-downloads.adblockplus.org/i_dont_care_about_cookies.txt", translate("i_dont_care_about_cookies"))
-o:value("https://anti-ad.net/anti-ad-for-dnsmasq.conf", translate("anti-ad-for-dnsmasq"))
 o.rmempty = true
 
 return m
